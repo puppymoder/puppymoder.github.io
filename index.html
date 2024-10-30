@@ -25,14 +25,8 @@
                         </ul>
                     </div>
                     <h2>:3</h2>
-<!--                    <h3>Other Tools</h3>
-                    <ul>
-                        <li><a href="https://sadgrlonline.github.io/html-cheatsheet/" target="_blank">HTML Cheatsheet</a>
-                        </li><li><a href="/sadgrl/webmastery/webmaster-links.html" target="_blank">Webmaster Links</a></li>
-                        <li><a href="/sadgrl/webmastery/downloads/tiledbgs.html" target="_blank">Tiled BGs</a></li>
-                        <li><a href="/sadgrl/webmastery/downloads/fonts.html" target="_blank">Fonts</a></li>
-                        <li><a href="/sadgrl/projects/ideas/" target="_blank">Site Ideas</a></li>
--->
+
+            
                     </ul>
                 </aside>
                 <main>
@@ -46,34 +40,20 @@
             </div>
             
         </div>
+
         <!-- THIS IS THE CSS !-->
+
         <style>
             /* user styles */
 
-            /* styles are what change the color and sizes of stuff on your site. */
-
-            /* these are variables that are being used in the code
-    these tended to confuse some people, so I only kept 
-    the images as variables */
-
             :root {
                 --header-image: url('https://images3.alphacoders.com/137/thumb-1920-1378554.jpg');
-                --body-bg-image: url('https://giffiles.alphacoders.com/221/221122.gif');
+                --body-bg-image: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHJsMHN1ajhkOGthOGhmNDlyY3lsZHI2azVuZjE3cmF3NGo5OXhiZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/S3bkh4BuHMyfC/giphy.webp');
 
                 /* colors */
                 --content: #43256E;
             }
 
-            /* if you have the URL of a font, you can set it below */
-            /* feel free to delete this if it's not your vibe */
-
-            /* this seems like a lot for just one font and I would have to agree 
-    but I wanted to include an example of how to include a custom font.
-    If you download a font file you can upload it onto your Neocities
-    and then link it! Many fonts have separate files for each style
-    (bold, italic, etc. T_T) which is why there are so many!
-    
-    */
 
             @font-face {
                 font-family: Nunito;
@@ -115,32 +95,19 @@
 
             /* below this line is CSS for the layout */
 
-            /* this is a CSS comment
-    to uncomment a line of CSS, remove the * and the /
-    before and after the text */
-
-
-            /* the "container" is what wraps your entire website */
-            /* if you want something (like the header) to be Wider than
-    the other elements, you will need to move that div outside
-    of the container */
             #container {
                 max-width: 900px;
-                /* this is the width of your layout! */
-                /* if you change the above value, scroll to the bottom
-      and change the media query according to the comment! */
+                /* layout width */
+                /* if you change the above value, scroll to the bottom and change the media query according to the comment */
                 margin: 0 auto;
-                /* this centers the entire page */
+                /* centers entire page */
             }
 
-            /* the area below is for all links on your page
-    EXCEPT for the navigation */
+            /* page links EXCEPT for navigation */
             #container a {
                 color: #ED64F5;
                 font-weight: bold;
-                /* if you want to remove the underline
-      you can add a line below here that says:
-      text-decoration:none; */
+                /* remove the underline - add a line below here that says: text-decoration:none; */
             }
 
             #header {
@@ -149,8 +116,7 @@
                 /* header color here! */
                 height: 150px;
                 /* this is only for a background image! */
-                /* if you want to put images IN the header, 
-      you can add them directly to the <div id="header"></div> element! */
+                /* to put images IN the header, you can add them directly to the <div id="header"></div> element */
                 background-image: var(--header-image);
                 background-size: 100%;
             }
@@ -194,20 +160,17 @@
                 display: flex;
             }
 
-            /* this colors BOTH sidebars
-    if you want to style them separately,
-    create styles for #leftSidebar and #rightSidebar */
+            /*  sidebar colour, create styles for #leftSidebar and #rightSidebar if want seperate */
             aside {
                 background-color: #241445;
                 width: 200px;
                 padding: 20px;
                 font-size: smaller;
-                /* this makes the sidebar text slightly smaller */
+                /* sidebar text slightly smaller */
             }
 
 
-            /* this is the color of the main content area,
-    between the sidebars! */
+            /* main area colour */
             main {
                 background-color: #43256E;
                 flex: 1;
@@ -215,11 +178,7 @@
                 order: 2;
             }
 
-            /* what's this "order" stuff about??
-    allow me to explain!
-    if you're using both sidebars, the "order" value
-    tells the CSS the order in which to display them.
-    left sidebar is 1, content is 2, and right sidebar is 3! */
+            /* left sidebar is 1, content is 2, and right sidebar is 3! */
 
             */ #leftSidebar {
                 order: 1;
@@ -236,7 +195,7 @@
                 height: 40px;
                 padding: 10px;
                 text-align: center;
-                /* this centers the footer text */
+                /* centers footer text */
             }
 
             h1,
@@ -272,14 +231,9 @@
             }
 
 
-            /* BELOW THIS POINT IS MEDIA QUERY */
+            /* MEDIA QUERY */
 
-            /* so you wanna change the width of your page? 
-    by default, the container width is 900px.
-    in order to keep things responsive, take your new height,
-    and then subtrack it by 100. use this new number as the 
-    "max-width" value below
-    */
+            /* by default, the container width is 900px to keep things responsive, take your new height, and then subtrack it by 100. use this new number as the "max-width" value below */
 
             @media only screen and (max-width: 800px) {
                 #flex {
@@ -290,10 +244,7 @@
                     width: 100%;
                 }
 
-                /* the order of the items is adjusted here for responsiveness!
-      since the sidebars would be too small on a mobile device.
-      feel free to play around with the order!
-      */
+                /* the order of the items is adjusted here for responsiveness! */
                 main {
                     order: 1;
                 }
