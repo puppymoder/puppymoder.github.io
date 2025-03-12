@@ -44,6 +44,7 @@ h2 {
     height: 40px;
     background-color: #242424;
     width: 100%;
+    outline: 1px solid black;
 }
 #navbar ul {
     display: flex;
@@ -73,11 +74,12 @@ h2 {
 
 /*left sidebar*/
 aside {
-background-color: rgba(54, 15, 137, 0.95);
+background-color: rgba(36, 36, 36, 0.95);
 width: 20%;
 padding: 20px;
 font-family: Arimo;
 list-style-type: none;
+outline: 1px solid black;
 }
 aside li a {
     color: #ffffff;
@@ -88,11 +90,12 @@ aside li a {
 
 /*main area*/
 main {
-    background-color: rgba(36, 10, 91, 0.95);
+    background-color: rgba(36, 36, 36, 0.95);
     flex: 1;
     padding: 20px;
     order: 2;
     font-family: Arimo;
+    outline: 1px solid black;
 }
 
 #leftSidebar {
