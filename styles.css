@@ -1,116 +1,39 @@
-:root {
-    --header-image: url('A/lh1.jpg');
-    --body-bg-image: url('A/bg2.gif');
-}
-
 body {
-    background-color: #61167c;
-    background-image: var(--body-bg-image);
-    background-size: 150px;
+    background-color: azure;
 }
 
-p {
-    font-family: Arimo;
-    color: #ffffff;
-    font-size: 15px;
-}
-
-h1 {
-    font-size: 20px;
-    color: #ffffff;
-}
-
-h2 {
-    font-size: 25px;
-    color: #ffffff;
-}
-
-/*layout*/
-
-#container {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-#header {
-    width: 100%;
-    height: 150px;
-    background-image: var(--header-image);
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-#navbar {
-    height: 40px;
-    background-color: #242424;
-    width: 100%;
-    outline: 1px solid black;
-}
-#navbar ul {
+.header {
+    margin-top: 10%;
     display: flex;
-    padding: 0;
-    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    display: block;
+    align-items: center;
+    justify-content: center;
     list-style-type: none;
-    justify-content: space-evenly;
 }
-#navbar li {
-    padding-top: 10px;
+
+.content li a {
+    color: black;
+    font-family: arimo;
+    font-size: 20px;
+    text-decoration: underline;
+    line-height: 2;
 }
-#navbar li a {
-    color: #ffffff;
-    font-family: HackBold;
-    font-size: 15px;
-    text-decoration: none;
-}
-#navbar li a:hover {
+
+.content li a:hover {
     color: aquamarine;
     text-decoration: underline;
-    font-family: HackBoldIta;
-}
-
-#flex {
-    display: flex;
-}
-
-/*left sidebar*/
-aside {
-background-color: rgba(36, 36, 36, 0.95);
-width: 20%;
-padding: 20px;
-font-family: Arimo;
-list-style-type: none;
-outline: 1px solid black;
-}
-aside li a {
-    color: #ffffff;
-    font-family: Arimo;
-    font-size: 15px;
-    text-decoration: underline;
-} 
-
-/*main area*/
-main {
-    background-color: rgba(36, 36, 36, 0.95);
-    flex: 1;
-    padding: 20px;
-    order: 2;
-    font-family: Arimo;
-    outline: 1px solid black;
-}
-
-#leftSidebar {
-    order: 1;
 }
 
 @font-face {
     font-family: Arimo;
     src: url(A/ArimoNerdFont-Regular.ttf);
   }
-@font-face {
-    font-family: HackBold;
-    src: url(A/HackNerdFont-Bold.ttf)
-}
-@font-face {
-    font-family: HackBoldIta;
-    src: url(A/HackNerdFont-BoldItalic.ttf)
-}
