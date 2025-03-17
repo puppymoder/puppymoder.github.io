@@ -7,6 +7,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url(A/bg.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .content {
