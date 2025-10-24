@@ -1,5 +1,7 @@
 * {
     font-family: Arimo;
+    overscroll-behavior: none;
+    overflow-x: hidden;
 }
 
 body {
@@ -258,4 +260,5 @@ body {
     100% {
         background-position: 0% 50%;
     }
+
 }
