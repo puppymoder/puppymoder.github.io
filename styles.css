@@ -1,0 +1,261 @@
+* {
+    font-family: Arimo;
+}
+
+body {
+    background-image: linear-gradient(-45deg, #4fc8b7, #76adbc, #e696a6, #a075ae);
+    background-size: 500% 500%;
+    animation: gradient 30s ease infinite;
+    height: 100vh;
+}
+
+.NavbarContainer {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(88, 90, 94, 0.5);
+}
+.NavbarLeft {
+    display: flex;
+    margin: auto;
+    order: 1;
+    flex-shrink: 1;
+    gap: 15px;
+    align-items: center;
+
+    font-weight: bold;
+    color: #F1F1F1;
+}
+.NavbarLeftPic {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #FFC5D3;
+}
+.NavbarRight {
+    display: flex;
+    margin: auto;
+    order: 2;
+    flex-shrink: 1;
+    gap: 15px;
+    
+    font-weight: bold;
+    color: #F1F1F1;
+}
+.NavbarRight a {
+    color: #F1F1F1;
+    text-decoration: underline;
+}
+.NavbarRight a:hover {
+    font-style: italic;
+}
+
+.IntroContainer {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 100px;
+}
+.IntroPic {
+    order: 1;
+    align-self: center;
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 15%;
+    border: 3px solid #FFC5D3;
+}
+.IntroText {
+    order: 2;
+    display: flex;
+    align-self: center;
+    width: 50%;
+    color: #F1F1F1;
+    font-size: 200%;
+}
+
+
+.AboutMeContainer, .SkillsContainer, .ProjectsContainer {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 100px;
+}
+.AboutMeTitle, .SkillsTitle {
+    font-size: 160%;
+    color: #F1F1F1;
+    font-style: italic;
+}
+.AboutMeText {
+    font-size: 130%;
+    color: #F1F1F1;
+    width: 50%;
+}
+.AboutMeText a {
+    color: #F1F1F1;
+}
+.AboutMeText a:hover {
+    color: #797979;
+}
+
+
+.Skills {
+    color: #F1F1F1;
+    font-size: 130%;
+    text-align: center;
+}
+
+
+.ProjectsTitle {
+    font-size: 160%;
+    color: #F1F1F1;
+    font-style: italic;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.Project1, .Project2, .Project3 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    gap: 20px;
+    color: #F1F1F1;
+    font-size: 130%;
+    padding: 20px;
+}
+.Project1Pic, .Project2Pic, .Project3Pic {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 15%;
+    border: 3px solid #FFC5D3;
+}
+
+
+.BlogLink {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    color: #F1F1F1;
+    font-size: 160%;
+    text-align: center;
+}
+.BlogLink a {
+    color: #F1F1F1;
+    text-decoration: underline;
+}
+.BlogLink a:hover {
+    color: #797979;
+}
+
+
+.BlogContainer {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding-top: 100px;    
+}
+.BlogText {
+    color: #F1F1F1;
+    font-size: 130%;
+    padding: 20px;
+    max-width: 60%;
+}
+.BlogText a {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    color: #F1F1F1;
+    padding: 20px;
+    text-decoration: underline;
+}
+.BlogText a:hover {
+    font-style: italic;
+}
+
+.PostContainer {
+    display: flex;
+    width: 100%;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align:left;
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+.PostTitle {
+    display: flex;
+    justify-content: center;
+    color: #F1F1F1;
+    font-size: 160%;
+    width: 100%;
+    text-decoration: underline;
+    padding-top: 100px;
+}
+.PostText {
+    color: #F1F1F1;
+    font-size: 130%;
+    gap: 20px;
+    max-width: 40%;
+}
+.PostReference {
+    color: #F1F1F1;
+    font-size: 130%;
+    gap: 20px;
+    max-width: 40%;
+    padding-top: 100px;
+}
+.PostR {
+    color: #F1F1F1;
+    font-size: 100%;
+    gap: 20px;
+    max-width: 30%;
+}
+
+
+@font-face {
+    font-family: Arimo;
+    src: url(Assets/ArimoNerdFontPropo-Regular.ttf);
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
