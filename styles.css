@@ -1,0 +1,23 @@
+* {
+    background-color: #333;
+    font-family: Arimo;
+    color: #F2F2F2;
+}
+
+body {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    height: 275px;
+    width: 275px;
+    margin: 250px;
+}
+
+@font-face {
+    font-family: Arimo;
+    src: url(stuff/ArimoNerdFontPropo-Regular.ttf);
+}
